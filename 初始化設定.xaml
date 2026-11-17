@@ -80,7 +80,7 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="初始化設定" sap:VirtualizedContainerService.HintSize="900.8000000000001,511.65666666666664" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="初始化設定" sap:VirtualizedContainerService.HintSize="645.6,533.2566666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -102,7 +102,7 @@
               <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.today_format]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">[Today.ToString("yyyyMMdd")]</InArgument>
+              <InArgument x:TypeArguments="x:String">[Today.ToString("yyyy/MM/dd")]</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
         </scg:List>
