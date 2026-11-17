@@ -1,0 +1,13 @@
+﻿{
+  "Name": "出貨立帳匹配查詢作業(axrq130)      [RPA測試環境toptst,200] ",
+  "Type": "Screen",
+  "Id": "c-OelRybm0qtG-cNpTi_vA",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/c-OelRybm0qtG-cNpTi_vA",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/fVeFaNlow0CDRM1ON83sGg",
+  "Created": "2026-11-12T07:09:54.380289Z",
+  "Updated": "2026-11-12T07:09:54.380289Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "確定",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "N1CU2ofU7Uq7fKVI6bSeww",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/N1CU2ofU7Uq7fKVI6bSeww",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/f5_RId-8wUSWgPhXFVCwwQ",
+  "Created": "2026-11-12T02:58:51.8517708Z",
+  "Updated": "2026-11-12T02:58:51.8517708Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

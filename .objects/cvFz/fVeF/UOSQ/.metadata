@@ -1,0 +1,13 @@
+﻿{
+  "Name": "各期應收帳齡分析查詢(axrq932)      [RPA測試環境toptst,200] ",
+  "Type": "Screen",
+  "Id": "UOSQ7s5zF0KdjknQdXZnCA",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/UOSQ7s5zF0KdjknQdXZnCA",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/fVeFaNlow0CDRM1ON83sGg",
+  "Created": "2026-11-11T09:06:02.6714135Z",
+  "Updated": "2026-11-11T09:06:02.6714135Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

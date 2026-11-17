@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-zlyznrASEqpg3kr6qDytA" Reference="yD91Cef3nUWnwnuicWEtsw/QW5jQSpXbkSLkaclsvnt-Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="140, 499, 120, 30" DesignTimeScaleFactor="1.25" Guid="ff6e6124-42cc-45ce-bb31-f687c5611b93" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHgAAAAeCAYAAADnydqVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ9SURBVGhD7Zg7ksMgDIZ9rbR7GJ8ht0j6PUBukDKncOdiZ9wlXbp07PCyQRJgEzsPjb4ZZgdiyaBfyLCNEljTwAGBFyIwc0Rg5ojAzBGBmSMCL+Ku2n2vDlc4/rl8hcD9pVfN6Z7sZ+kG1ey7dCP9PNThiJ/dXR7qfLJ/rd9BnaGpgbYvv3d9kMAmeHAyYTveVA9s9KKpcXW9qR0IUAwIBOWDEBT27XsSO0sLMdNvEuPfiTmuyfZHwRdQY1MLEjhGl6ROtR0cd7jF7o49EURrOy0E+4KJYfpEwKEQcR++B1ApsJmLSRqbhKF/O+/eCp2w9/NCGySZ7NtQL7AW1wXOBAoEsThG7TowRlaT030SxidYLlhVJdpRsk0kTh6bMGRMN6Be4ABKTHI3hqWO/IbFi/dCjoJqG983QU6U5TVw4uaSZ9rl8JccLATGZc0Q7FBso4ntsgLD5ImYcchBzQvlSiuaWwJQRciqk21LE2QZXyjwkPm2wYow+SytgaaQKKkkI6qT3e3h2LzYPssXCoz7WcBJHrfcDtLzoX8vVhEgsj0531RrbFyVyNmvxEYCv+AbPB6yoI8Ych4ecg4hlTvY0w1W1P2g2uj+XI7pWmwmcHFs7ik6OlSBU/RT5ZeeI4IQRNuh6kRg503cl7XP0ntXYjOB8f0U+1rlHmwEoMsoRX8F91nifYgw8WZUDXjw0qB/brhnSrF9lg0Fxt8/nPWgBFI+oKDjzph8+n5pnga3I21LCBU9M6dNfsJdG4IEDsZT616DgsCfQSxw4hrzoh2xmCBZ3jE3JPDP75+0N7StQAILvBCBmSMCM0cEZo4IzBwRmDkiMHNEYOaIwMz5B9TlS0JvXZr+AAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowToolSaveBits' title='Login' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6d07d1915d98172dd7616921b9b69b77.png" xmlns="">0hTnfTcqoEU21NX5xIjxPJA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

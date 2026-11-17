@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Qn9ggRQM3k6n5f13NVJrgg" Reference="yD91Cef3nUWnwnuicWEtsw/v9D4d_vS8Emo4w0HmKNV-w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="116, 372, 325, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='Login' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' idx='2' name=' ' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='login' role='push button' /&gt;" Guid="b1796c89-2157-41df-8552-7b014cac090d" ImageBase64="" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowToolSaveBits' title='Login' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="09b87e7fe5af0ffb08471de957906fe5.png" xmlns="">0S6yLoVkShEKm9mHRPaHTYQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

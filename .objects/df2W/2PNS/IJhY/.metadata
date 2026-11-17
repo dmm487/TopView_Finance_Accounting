@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome T100_Index",
+  "Type": "Screen",
+  "Id": "IJhYUyktDUiE8mGH-S_ojw",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/IJhYUyktDUiE8mGH-S_ojw",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/2PNSsEtBEkyEoPLc5L3Oyg",
+  "Created": "2026-11-11T07:48:53.4161104Z",
+  "Updated": "2026-11-11T07:48:53.4161104Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bDJIm8StXUWFdoVPZR_DVQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="18, 55, 37, 38" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='w_axrq932_Window.w_axrq932_axrq932.tmp_ToolBar_name_tb_system.w_*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_axrq932_Window.w_axrq932_axrq932.tmp_ToolBar_name_tb_system.w_*' role='push button' check:fulltext='accept' /&gt;" Guid="666b08f4-9453-482e-bd0f-898ba25e431b" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='各期應收帳齡分析查詢(axrq932)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="fdbcc987d11d421a981c842823d3239b.png" xmlns="">0p4uWpuUbwk2OtVJAgbLfsw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "重新整理",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "vsIoYMKKKEevI6xsHbWwnQ",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/vsIoYMKKKEevI6xsHbWwnQ",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/f5_RId-8wUSWgPhXFVCwwQ",
+  "Created": "2026-11-17T06:15:50.6358048Z",
+  "Updated": "2026-11-17T06:15:50.6358048Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

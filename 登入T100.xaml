@@ -1,0 +1,329 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Login" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Login_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="登入T100" sap:VirtualizedContainerService.HintSize="838,3173.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome T100_Index" sap:VirtualizedContainerService.HintSize="559.2,754.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="128fba46-9dac-41d6-b501-aef71c2ac391" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,505.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'RPA測試環境'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="128fba46-9dac-41d6-b501-aef71c2ac391" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="t100.topviewcorp.com" ContentHash="QdUYglTO-kOSNXfv4d0Clg" DesignTimeRectangle="773, 706, 94, 21" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='ng-binding' aaname='RPA測試環境' check:innerText='RPA測試環境' /&gt;" Guid="5025dbf6-bc55-431c-b4a7-58520f6b21b2" ImageBase64="" InformativeScreenshot="f7f331d4f7c59f80906bbe8464776645.png" Reference="yD91Cef3nUWnwnuicWEtsw/SZb6W6NmREGUSS9RUPT5og" ScopeSelectorArgument="&lt;html app='chrome.exe' title='T100_Index' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="708, 690, 62, 52" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='title_tst ng-binding' aaname='200' check:innerText='200' /&gt;" Guid="04d2be00-cbe2-4d7b-903f-88dee81d38dc" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click '開啟「T100 ERP V3」'" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="128fba46-9dac-41d6-b501-aef71c2ac391" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="t100.topviewcorp.com" ContentHash="eq8kQfs7Mk6wWz3yqZ8xsA" DesignTimeRectangle="940, 202, 160, 37" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='要開啟「T100 ERP V3」嗎？' role='dialog' /&gt;&lt;ctrl name='開啟「T100 ERP V3」' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='要開啟「T100 ERP V3」嗎？' role='dialog' /&gt;&lt;ctrl name='開啟「T100 ERP V3」' role='push button' automationid='' check:fulltext='開啟「T100 ERP V3」' /&gt;" Guid="0d471890-5a3b-42bd-82c7-d52822b7db05" InformativeScreenshot="7d10dd12bb9fff9405c5561d62699fb6.png" Reference="yD91Cef3nUWnwnuicWEtsw/9eHy5xm2T0e5eSw8WkImhQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='T100_Index - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="arH9sjAIGUeVvjkqbTrYDQ" IconBase64="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" InformativeScreenshot="013ca349220c120607ef67c7d3335085.jpg" Reference="yD91Cef3nUWnwnuicWEtsw/IJhYUyktDUiE8mGH-S_ojw" Selector="&lt;html app='chrome.exe' title='T100_Index' /&gt;" Title="T100_Index" Url="http://t100.topviewcorp.com/" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Login" sap:VirtualizedContainerService.HintSize="559.2,2396" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="9eff24de-8472-41f1-a35f-146c89fcf807" Timeout="300" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="525.6,2081.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="boolean_t100" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,810.4" sap2010:WorkflowViewState.IdRef="RetryScope_2">
+              <ui:RetryScope.ActivityBody>
+                <ActivityAction>
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="449.6,487.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="2" DisplayName="Click 'T1005R7'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9eff24de-8472-41f1-a35f-146c89fcf807" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable ContentHash="-zlyznrASEqpg3kr6qDytA" DesignTimeRectangle="140, 499, 120, 30" DesignTimeScaleFactor="1.25" Guid="ff6e6124-42cc-45ce-bb31-f687c5611b93" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHgAAAAeCAYAAADnydqVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ9SURBVGhD7Zg7ksMgDIZ9rbR7GJ8ht0j6PUBukDKncOdiZ9wlXbp07PCyQRJgEzsPjb4ZZgdiyaBfyLCNEljTwAGBFyIwc0Rg5ojAzBGBmSMCL+Ku2n2vDlc4/rl8hcD9pVfN6Z7sZ+kG1ey7dCP9PNThiJ/dXR7qfLJ/rd9BnaGpgbYvv3d9kMAmeHAyYTveVA9s9KKpcXW9qR0IUAwIBOWDEBT27XsSO0sLMdNvEuPfiTmuyfZHwRdQY1MLEjhGl6ROtR0cd7jF7o49EURrOy0E+4KJYfpEwKEQcR++B1ApsJmLSRqbhKF/O+/eCp2w9/NCGySZ7NtQL7AW1wXOBAoEsThG7TowRlaT030SxidYLlhVJdpRsk0kTh6bMGRMN6Be4ABKTHI3hqWO/IbFi/dCjoJqG983QU6U5TVw4uaSZ9rl8JccLATGZc0Q7FBso4ntsgLD5ImYcchBzQvlSiuaWwJQRciqk21LE2QZXyjwkPm2wYow+SytgaaQKKkkI6qT3e3h2LzYPssXCoz7WcBJHrfcDtLzoX8vVhEgsj0531RrbFyVyNmvxEYCv+AbPB6yoI8Ych4ecg4hlTvY0w1W1P2g2uj+XI7pWmwmcHFs7ik6OlSBU/RT5ZeeI4IQRNuh6kRg503cl7XP0ntXYjOB8f0U+1rlHmwEoMsoRX8F91nifYgw8WZUDXjw0qB/brhnSrF9lg0Fxt8/nPWgBFI+oKDjzph8+n5pnga3I21LCBU9M6dNfsJdG4IEDsZT616DgsCfQSxw4hrzoh2xmCBZ3jE3JPDP75+0N7StQAILvBCBmSMCM0cEZo4IzBwRmDkiMHNEYOaIwMz5B9TlS0JvXZr+AAAAAElFTkSuQmCC" InformativeScreenshot="6d07d1915d98172dd7616921b9b69b77.png" Reference="yD91Cef3nUWnwnuicWEtsw/QW5jQSpXbkSLkaclsvnt-Q" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowToolSaveBits' title='Login' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NCheckState DisplayName="Check App State '帐号'" EnableIfExists="False" EnableIfNotExists="False" Exists="[boolean_t100]" sap:VirtualizedContainerService.HintSize="416,201.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="9eff24de-8472-41f1-a35f-146c89fcf807" Version="V4">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable ContentHash="1zrVFwlBXEmVRqoTTe1ZHA" DesignTimeRectangle="116, 170, 325, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='Login' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='editable text' /&gt;" Guid="0847e9fd-82a7-4d0c-937a-db33555bd859" ImageBase64="" InformativeScreenshot="9529a42df9ca9dcf91461f0505da2183.png" IsResponsive="True" Reference="yD91Cef3nUWnwnuicWEtsw/J0tHSCDEwUyt2Tpg0gdjTQ" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowToolSaveBits' title='Login' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="116, 147, 82, 20" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='Login' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' idx='2' name=' ' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='帐号' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='Login' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='帐号' role='text' check:text='帐号' /&gt;" Guid="684524ba-d83c-4001-817f-be66a860f0fc" SearchSteps="Selector, FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                    </uix:NCheckState>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RetryScope.ActivityBody>
+              <ui:RetryScope.Condition>
+                <ActivityFunc x:TypeArguments="x:Boolean">
+                  <ui:CheckTrue ErrorMessage="{x:Null}" DisplayName="Check True" Expression="[boolean_t100]" sap:VirtualizedContainerService.HintSize="450,131" sap2010:WorkflowViewState.IdRef="CheckTrue_1" />
+                </ActivityFunc>
+              </ui:RetryScope.Condition>
+            </ui:RetryScope>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="2" DisplayName="Type Into '帐号'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="492,251" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="WindowMessages" ScopeIdentifier="9eff24de-8472-41f1-a35f-146c89fcf807" Text="[&quot;TE2710_RPA&quot;+&quot;[k(Tab)]&quot;]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="1zrVFwlBXEmVRqoTTe1ZHA" DesignTimeRectangle="116, 170, 325, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='Login' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='editable text' /&gt;" Guid="0847e9fd-82a7-4d0c-937a-db33555bd859" ImageBase64="" InformativeScreenshot="9529a42df9ca9dcf91461f0505da2183.png" IsResponsive="True" Reference="yD91Cef3nUWnwnuicWEtsw/J0tHSCDEwUyt2Tpg0gdjTQ" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowToolSaveBits' title='Login' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="116, 147, 82, 20" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='Login' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' idx='2' name=' ' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='帐号' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='Login' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='帐号' role='text' check:text='帐号' /&gt;" Guid="684524ba-d83c-4001-817f-be66a860f0fc" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="2" DisplayName="Type Into '密码'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="492,251" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="WindowMessages" ScopeIdentifier="9eff24de-8472-41f1-a35f-146c89fcf807" Text="[&quot;TE2710_RPA01&quot;+ &quot;[k(Tab)]&quot;]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="fnGBWhcbYU6OBuSXBM2eTQ" DesignTimeRectangle="116, 214, 325, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='Login' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' idx='2' name=' ' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' idx='2' name=' ' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='Login' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='editable text' /&gt;" Guid="0a35052b-9c86-4e28-8ce0-0ab5a6ac31dd" ImageBase64="" InformativeScreenshot="866cd380e1cdd00a595a860f56a152a5.png" IsResponsive="True" Reference="yD91Cef3nUWnwnuicWEtsw/uNjnYT__Mku_Tu9COTh0QQ" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowToolSaveBits' title='Login' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="116, 195, 104, 16" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='Login' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' idx='2' name=' ' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='密码' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='Login' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='密码' role='text' check:text='密码' /&gt;" Guid="945211ec-0eed-4cf8-b235-6c96e6eebda5" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'login'" sap:VirtualizedContainerService.HintSize="492,227" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9eff24de-8472-41f1-a35f-146c89fcf807" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="Qn9ggRQM3k6n5f13NVJrgg" DesignTimeRectangle="116, 372, 325, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='Login' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name=' ' role='grouping' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' idx='2' name=' ' role='push button' /&gt;&lt;ctrl automationid='azzi000_01_win_Window.azzi000_01_win_Window_CentralWidget.azzi00*' name='login' role='push button' /&gt;" Guid="b1796c89-2157-41df-8552-7b014cac090d" ImageBase64="" InformativeScreenshot="09b87e7fe5af0ffb08471de957906fe5.png" Reference="yD91Cef3nUWnwnuicWEtsw/v9D4d_vS8Emo4w0HmKNV-w" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowToolSaveBits' title='Login' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,480" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+              <ui:RetryScope.ActivityBody>
+                <ActivityAction>
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,278" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'ok'" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9eff24de-8472-41f1-a35f-146c89fcf807" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable ContentHash="9euam7sgA0ih5DXPokaseQ" DesignTimeRectangle="243, 281, 87, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' name='資訊' role='push button' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' idx='2' name=' ' role='push button' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' name='ok' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' name='資訊' role='push button' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' name=' ' role='push button' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' name='ok' role='push button' check:fulltext='ok' /&gt;" Guid="9ab2943e-03c7-4f2c-938b-8d803cbe7d08" InformativeScreenshot="14dc20f7ad8245b6ff988b2fbf3514c0.png" Reference="yD91Cef3nUWnwnuicWEtsw/Fd4sbbPc6EWfavzmM97gjg" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowToolSaveBits' title='資訊' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RetryScope.ActivityBody>
+              <ui:RetryScope.Condition>
+                <ActivityFunc x:TypeArguments="x:Boolean" />
+              </ui:RetryScope.Condition>
+            </ui:RetryScope>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="666, 238, 547, 654" ContentHash="xnZgJIpQ3EW91wVNcW8E7A" FilePath="C:\Program Files\FourJs\gdc\bin\gdc.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHXSURBVDhPzZLPa9NgGMdjbWezNJBhYdaMOlGLjsFWir8QMSAIgogFz4Ke/BO89eDFizdvu+4m9nmStGHDSi6KMAsijNn0Xd7nzTyIsIOgF0F55Y1Y6evRix/48kC+7weeN4lh/F/4I7vSpSu1ULQXQtGuBXRLTTdIbzTCZMWLqawrU7ghXymD+HAQMjkd8WMGaN8GerYY0AXdm9AaDktHfXbPQt4zUQws5AMLxWAW+csyZJ8K3UyaQFQP06u6O0UnjovXI3ZIrfwr25WliDUdP+0WIJMW8K3Wxk5N93K8OC42+zvHLvkjW+8uvkhcC2hLXesIpnf1Psf1x/dNoL05ZOte/NbR+/mAHhRASAf5mt7lqzvIfaO7J8tA+8u98Rn9TD3cvVOETDoonqrzem8s4G67AvTqMKaPWsFwVu/nff5QXWEO+RO9m3Bt853VkbKgP29GbMlEGhVBfHeR3db7HCV6cVK9vCFqv9N6ntaP99hNG+m1+goV4Jur8Pf7MdTKVT/tWEjbFtDYApGoaaKgEmTflGwDf7PYH6/qbs7pkHkW0scSiK8lEF9m/uSzifS+6qePlyN2QvcmeEFSbQTp2UbIz6mc6tN5NU9GrKl+HCnlAd35Z34Cilr/eH6aa7AAAAAASUVORK5CYII=" InformativeScreenshot="cfc3b9240cd71d6a0b33bd3293684b31.png" Reference="yD91Cef3nUWnwnuicWEtsw/OPLHR99_S0W1pkauy3U9Xw" Selector="&lt;wnd app='gdc.exe' cls='Qt672QWindowToolSaveBits' title='Login' /&gt;" Title="Login" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="LPk_haJo8k-aaR0TCq9lUA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-8, 245, 1936, 619" FilePath="C:\Program Files\FourJs\gdc\bin\gdc.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHXSURBVDhPzZLPa9NgGMdjbWezNJBhYdaMOlGLjsFWir8QMSAIgogFz4Ke/BO89eDFizdvu+4m9nmStGHDSi6KMAsijNn0Xd7nzTyIsIOgF0F55Y1Y6evRix/48kC+7weeN4lh/F/4I7vSpSu1ULQXQtGuBXRLTTdIbzTCZMWLqawrU7ghXymD+HAQMjkd8WMGaN8GerYY0AXdm9AaDktHfXbPQt4zUQws5AMLxWAW+csyZJ8K3UyaQFQP06u6O0UnjovXI3ZIrfwr25WliDUdP+0WIJMW8K3Wxk5N93K8OC42+zvHLvkjW+8uvkhcC2hLXesIpnf1Psf1x/dNoL05ZOte/NbR+/mAHhRASAf5mt7lqzvIfaO7J8tA+8u98Rn9TD3cvVOETDoonqrzem8s4G67AvTqMKaPWsFwVu/nff5QXWEO+RO9m3Bt853VkbKgP29GbMlEGhVBfHeR3db7HCV6cVK9vCFqv9N6ntaP99hNG+m1+goV4Jur8Pf7MdTKVT/tWEjbFtDYApGoaaKgEmTflGwDf7PYH6/qbs7pkHkW0scSiK8lEF9m/uSzifS+6qePlyN2QvcmeEFSbQTp2UbIz6mc6tN5NU9GrKl+HCnlAd35Z34Cilr/eH6aa7AAAAAASUVORK5CYII=" Selector="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' /&gt;" Title="出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*" Version="V1">
+      <imageRef attrName="InformativeScreenshot" originalValue="2fb89dd9b9d5ce147f65d2ca3ec64291.png" xmlns="">0t1XctdhNcEqeybDLJF4gNg</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

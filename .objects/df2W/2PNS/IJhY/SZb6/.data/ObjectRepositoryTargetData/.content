@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QdUYglTO-kOSNXfv4d0Clg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="t100.topviewcorp.com" DesignTimeRectangle="773, 706, 94, 21" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='ng-binding' aaname='RPA測試環境' check:innerText='RPA測試環境' /&gt;" Guid="5025dbf6-bc55-431c-b4a7-58520f6b21b2" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='T100_Index' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="708, 690, 62, 52" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='title_tst ng-binding' aaname='200' check:innerText='200' /&gt;" Guid="04d2be00-cbe2-4d7b-903f-88dee81d38dc" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f7f331d4f7c59f80906bbe8464776645.png" xmlns="">0j-h_eZWgWUy_1xBWQcWbAA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

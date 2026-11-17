@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="z3zySgb5Uki8zMjiQi1xGg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="1882, 1, 47, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='關閉' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='關閉' role='push button' automationid='' check:text='關閉' /&gt;" Guid="3e2827ea-3c8b-491d-bdf2-63d546b5e4dc" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="aa425ad4935a0bdf6fbfc0de013f2714.png" xmlns="">0nt83jy7A-EWP_9xUo7VyLw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "語言",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "z8W5lJLMO0mbdBzD9XAMYg",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/z8W5lJLMO0mbdBzD9XAMYg",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/OPLHR99_S0W1pkauy3U9Xw",
+  "Created": "2026-11-11T08:17:52.0650602Z",
+  "Updated": "2026-11-11T08:17:52.0650602Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "帐号",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "J0tHSCDEwUyt2Tpg0gdjTQ",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/J0tHSCDEwUyt2Tpg0gdjTQ",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/OPLHR99_S0W1pkauy3U9Xw",
+  "Created": "2026-11-11T08:05:51.7158299Z",
+  "Updated": "2026-11-11T08:05:51.7158299Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

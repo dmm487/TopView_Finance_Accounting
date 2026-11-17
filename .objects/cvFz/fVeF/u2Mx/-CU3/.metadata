@@ -1,0 +1,14 @@
+﻿{
+  "Name": "最大化",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "-CU3UyP9ck6QXzD10AIIhA",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/-CU3UyP9ck6QXzD10AIIhA",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/u2MxVouheky9aVZvl45E9g",
+  "Created": "2026-11-12T02:55:08.6217525Z",
+  "Updated": "2026-11-12T02:55:08.6217525Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

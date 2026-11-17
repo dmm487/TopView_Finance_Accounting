@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3sIwmrnkb06kDqSVWKogRQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="1877, 48, 40, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' name='T100 系統首頁(azzi000)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOPV*' role='push button' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' name='cmt_grid_1' role='push button' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' name='logout' role='push button' /&gt;" Guid="91f31a16-1428-44d5-b4dc-c42a246cb56c" ImageBase64="" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='T100 系統首頁(azzi000)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOPV*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3e8444b04b24a4ba17411a556be9b083.png" xmlns="">03M5K_60MZUO17vYvkm5iNQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

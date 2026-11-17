@@ -1,0 +1,14 @@
+﻿{
+  "Name": "密码",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "uNjnYT__Mku_Tu9COTh0QQ",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/uNjnYT__Mku_Tu9COTh0QQ",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/OPLHR99_S0W1pkauy3U9Xw",
+  "Created": "2026-11-11T08:11:47.3051193Z",
+  "Updated": "2026-11-11T08:11:47.3051193Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "T100 系統首頁(azzi000)      [RPA測試環境toptst,200]  ",
+  "Type": "Screen",
+  "Id": "Q6y-2ie4Lku4WQvcZPag3w",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/Q6y-2ie4Lku4WQvcZPag3w",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/fVeFaNlow0CDRM1ON83sGg",
+  "Created": "2026-11-11T08:45:38.7000642Z",
+  "Updated": "2026-11-11T08:45:38.7000642Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

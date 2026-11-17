@@ -1,0 +1,14 @@
+﻿{
+  "Name": "T1005R7",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "QW5jQSpXbkSLkaclsvnt-Q",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/QW5jQSpXbkSLkaclsvnt-Q",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/OPLHR99_S0W1pkauy3U9Xw",
+  "Created": "2026-11-11T08:00:32.1512813Z",
+  "Updated": "2026-11-11T08:00:32.1512813Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

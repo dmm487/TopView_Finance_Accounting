@@ -1,0 +1,14 @@
+﻿{
+  "Name": "allin",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "tpa2KP9HjUqrUVqM8RXSsg",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/tpa2KP9HjUqrUVqM8RXSsg",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/u2MxVouheky9aVZvl45E9g",
+  "Created": "2026-11-13T02:40:16.8561456Z",
+  "Updated": "2026-11-13T02:40:16.8561456Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

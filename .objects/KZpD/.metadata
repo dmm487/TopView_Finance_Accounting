@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge msedge.exe",
+  "Type": "App",
+  "Id": "KZpDgJ0RA0i3d69RAStd7g",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/KZpDgJ0RA0i3d69RAStd7g",
+  "Created": "2026-11-13T03:50:15.3200932Z",
+  "Updated": "2026-11-13T03:50:15.3200932Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

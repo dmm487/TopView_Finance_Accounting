@@ -1,0 +1,14 @@
+﻿{
+  "Name": "exporttoexcel",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "zFfCuAsKs0m-GF46XpfrLg",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/zFfCuAsKs0m-GF46XpfrLg",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/rv9NidT4BUiCJLv3BzFQWg",
+  "Created": "2026-11-12T06:56:34.1805216Z",
+  "Updated": "2026-11-12T06:56:34.1805216Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

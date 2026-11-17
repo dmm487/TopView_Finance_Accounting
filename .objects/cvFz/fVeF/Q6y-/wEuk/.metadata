@@ -1,0 +1,14 @@
+﻿{
+  "Name": "退出",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "wEukJ8W8GkmgM5mI1jdcTw",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/wEukJ8W8GkmgM5mI1jdcTw",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/Q6y-2ie4Lku4WQvcZPag3w",
+  "Created": "2026-11-17T06:54:24.8938831Z",
+  "Updated": "2026-11-17T06:54:24.8938831Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

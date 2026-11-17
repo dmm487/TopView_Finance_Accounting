@@ -1,0 +1,446 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="財會_出貨立帳匹配查詢" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="財會_出貨立帳匹配查詢_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="財會_出貨立帳匹配查詢" sap:VirtualizedContainerService.HintSize="1086.4,5459.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="si:FileInfo" Name="download_file" />
+      <Variable x:TypeArguments="sd:DataTable" Name="input_data" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="T100 系統首頁(azzi000)      [RPA測試環境toptst,200]" sap:VirtualizedContainerService.HintSize="1086.4,853.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="b4ff40c6-6b4d-4459-8a9b-4fa8ebfd1f3b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,530.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'editable text'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b4ff40c6-6b4d-4459-8a9b-4fa8ebfd1f3b" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="awWDWb41E0COinSBqs1UWg" DesignTimeRectangle="63, 48, 276, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' name='T100 系統首頁(azzi000)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOPV*' role='push button' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' name=' ' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' name='T100 系統首頁(azzi000)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOPV*' role='push button' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' name=' ' role='editable text' /&gt;" Guid="aa8c1c71-b11c-4079-ba59-48546476d023" InformativeScreenshot="4f1d8483946e79cea1f603c977ff699b.png" Reference="yD91Cef3nUWnwnuicWEtsw/l8Id5wJlW0KxcVKsPgy4yA" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='T100 系統首頁(azzi000)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOPV*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="2" DisplayName="Type Into 'editable text'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="416,243.2" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="WindowMessages" ScopeIdentifier="b4ff40c6-6b4d-4459-8a9b-4fa8ebfd1f3b" Text="[&quot;axrq130&quot;+&quot;[k(Enter)]&quot;]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="awWDWb41E0COinSBqs1UWg" DesignTimeRectangle="63, 48, 276, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' name='T100 系統首頁(azzi000)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOPV*' role='push button' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' name=' ' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' name='T100 系統首頁(azzi000)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOPV*' role='push button' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' name=' ' role='editable text' /&gt;" Guid="aa8c1c71-b11c-4079-ba59-48546476d023" InformativeScreenshot="4f1d8483946e79cea1f603c977ff699b.png" Reference="yD91Cef3nUWnwnuicWEtsw/l8Id5wJlW0KxcVKsPgy4yA" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='T100 系統首頁(azzi000)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOPV*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" ContentHash="7t_N4GAlhU6LJs-rMxin8w" FilePath="C:\Program Files\FourJs\gdc\bin\gdc.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHXSURBVDhPzZLPa9NgGMdjbWezNJBhYdaMOlGLjsFWir8QMSAIgogFz4Ke/BO89eDFizdvu+4m9nmStGHDSi6KMAsijNn0Xd7nzTyIsIOgF0F55Y1Y6evRix/48kC+7weeN4lh/F/4I7vSpSu1ULQXQtGuBXRLTTdIbzTCZMWLqawrU7ghXymD+HAQMjkd8WMGaN8GerYY0AXdm9AaDktHfXbPQt4zUQws5AMLxWAW+csyZJ8K3UyaQFQP06u6O0UnjovXI3ZIrfwr25WliDUdP+0WIJMW8K3Wxk5N93K8OC42+zvHLvkjW+8uvkhcC2hLXesIpnf1Psf1x/dNoL05ZOte/NbR+/mAHhRASAf5mt7lqzvIfaO7J8tA+8u98Rn9TD3cvVOETDoonqrzem8s4G67AvTqMKaPWsFwVu/nff5QXWEO+RO9m3Bt853VkbKgP29GbMlEGhVBfHeR3db7HCV6cVK9vCFqv9N6ntaP99hNG+m1+goV4Jur8Pf7MdTKVT/tWEjbFtDYApGoaaKgEmTflGwDf7PYH6/qbs7pkHkW0scSiK8lEF9m/uSzifS+6qePlyN2QvcmeEFSbQTp2UbIz6mc6tN5NU9GrKl+HCnlAd35Z34Cilr/eH6aa7AAAAAASUVORK5CYII=" InformativeScreenshot="c37de0a2596198788600aa52c2e97f5e.png" Reference="yD91Cef3nUWnwnuicWEtsw/Q6y-2ie4Lku4WQvcZPag3w" Selector="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='T100 系統首頁(azzi000)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOPV*' /&gt;" Title="T100 系統首頁(azzi000)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOPV*" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="出貨立帳匹配查詢作業(axrq130)      [RPA測試環境toptst,200]" sap:VirtualizedContainerService.HintSize="1086.4,3061.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="52ae97ee-2db0-48a2-bb5f-04ef69358140" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1052.8,2738.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="1" DelayBefore="2" DelayBetweenKeys="1" DisplayName="Keyboard Shortcuts '扣帳日期'" sap:VirtualizedContainerService.HintSize="1019.2,267.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="52ae97ee-2db0-48a2-bb5f-04ef69358140" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][k(del)][u(hk)]" Version="V4">
+              <uix:NKeyboardShortcuts.Target>
+                <uix:TargetAnchorable ContentHash="TaC3xpZ-WkKJK9F0MO9phQ" DesignTimeRectangle="84, 284, 190, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='基本查詢' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='cmt_hbox_1' role='grouping' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='cmt_xmdk001' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='基本查詢' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='cmt_hbox_1' role='grouping' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='cmt_xmdk001' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' role='editable text' /&gt;" Guid="5062ac24-6459-4c2a-9128-5451a857a563" InformativeScreenshot="ddab65ae2e414906b4544edeb8e5fe27.png" IsResponsive="True" Reference="yD91Cef3nUWnwnuicWEtsw/N1DL7MWRqEaLhXO5OQOpGA" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="32, 283, 48, 22" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='基本查詢' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='cmt_hbox_1' role='grouping' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='扣帳日期' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='基本查詢' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='cmt_hbox_1' role='grouping' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='扣帳日期' role='text' check:text='扣帳日期' /&gt;" Guid="78b52655-6f41-4441-b80f-7ccc17a86e30" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NKeyboardShortcuts.Target>
+              <uix:NKeyboardShortcuts.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NKeyboardShortcuts.VerifyOptions>
+            </uix:NKeyboardShortcuts>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="2" DisplayName="Type Into '扣帳日期'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="1019.2,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="WindowMessages" ScopeIdentifier="52ae97ee-2db0-48a2-bb5f-04ef69358140" Text="[Today.ToString(&quot;yyyy/MM/dd&quot;)+&quot;[k(Tab)]&quot;]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="TaC3xpZ-WkKJK9F0MO9phQ" DesignTimeRectangle="84, 284, 190, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='基本查詢' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='cmt_hbox_1' role='grouping' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='cmt_xmdk001' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='基本查詢' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='cmt_hbox_1' role='grouping' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='cmt_xmdk001' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' role='editable text' /&gt;" Guid="5062ac24-6459-4c2a-9128-5451a857a563" InformativeScreenshot="ddab65ae2e414906b4544edeb8e5fe27.png" IsResponsive="True" Reference="yD91Cef3nUWnwnuicWEtsw/N1DL7MWRqEaLhXO5OQOpGA" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="32, 283, 48, 22" ElementType="Text" FullSelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='基本查詢' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='cmt_hbox_1' role='grouping' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='扣帳日期' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='基本查詢' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='cmt_hbox_1' role='grouping' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='扣帳日期' role='text' check:text='扣帳日期' /&gt;" Guid="78b52655-6f41-4441-b80f-7ccc17a86e30" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click '未立暫估且未立帳'" sap:VirtualizedContainerService.HintSize="1019.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52ae97ee-2db0-48a2-bb5f-04ef69358140" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="fCO7cMiP2UG5DJ9WWQifTg" DesignTimeRectangle="979, 260, 118, 20" DesignTimeScaleFactor="1" ElementType="RadioButton" FullSelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='基本查詢' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='cmt_hbox_1' role='grouping' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='選項' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='未立暫估且未立帳' role='radio button' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='基本查詢' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='cmt_hbox_1' role='grouping' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='選項' role='push button' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Window_CentralWidget.w_axrq130_Form_t*' name='未立暫估且未立帳' role='radio button' check:fulltext='未立暫估且未立帳' /&gt;" Guid="1a5fa04a-4c7b-473a-b7bf-3864d13068e1" InformativeScreenshot="acf15a090d72bfbb91112e7192b6c1c0.png" Reference="yD91Cef3nUWnwnuicWEtsw/thSTxeUoBUOJtiWPFzvkSg" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'accept'" sap:VirtualizedContainerService.HintSize="1019.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52ae97ee-2db0-48a2-bb5f-04ef69358140" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="2n5cx5xVbU-_h3_UTWnT7A" DesignTimeRectangle="18, 55, 37, 38" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_axrq130.tmp_ToolBar_name_tb_system.w_*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_axrq130.tmp_ToolBar_name_tb_system.w_*' role='push button' check:fulltext='accept' /&gt;" Guid="c8e9301c-2fdb-4754-9a4e-9e84a7876d7b" InformativeScreenshot="9d900a958cd16469a1b6abea3d3c4110.png" Reference="yD91Cef3nUWnwnuicWEtsw/3sojhv6lgEqkeczyMMuTvw" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'ok'" sap:VirtualizedContainerService.HintSize="1019.2,1489.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="52ae97ee-2db0-48a2-bb5f-04ef69358140" Version="V4">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,280" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'ok'" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52ae97ee-2db0-48a2-bb5f-04ef69358140" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="b54CZ9xgrEmzLbDdYlRAhg" DesignTimeRectangle="262, 280, 94, 25" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' name='錯誤' role='push button' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' idx='2' name=' ' role='push button' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' name='ok' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' name='錯誤' role='push button' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' name=' ' role='push button' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' name='ok' role='push button' check:fulltext='ok' /&gt;" Guid="84b16e25-8c37-434d-bdeb-c9e3c31cddc6" InformativeScreenshot="292592628a669807c704127d48cab1e6.png" Reference="yD91Cef3nUWnwnuicWEtsw/QN0Tv5_MiUe0hYKrVQBY4g" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowToolSaveBits' title='錯誤' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="516.8,1239.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'exporttoexcel'" sap:VirtualizedContainerService.HintSize="483.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52ae97ee-2db0-48a2-bb5f-04ef69358140" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="OLOQwPenDUm5CCF_pm3dVA" DesignTimeRectangle="406, 55, 37, 38" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_axrq130.tmp_ToolBar_name_tb_system.w_*' name='exporttoexcel' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_axrq130.tmp_ToolBar_name_tb_system.w_*' name='exporttoexcel' role='push button' check:fulltext='exporttoexcel' /&gt;" Guid="efae5fbb-2ee2-448c-83da-4caeae4530d2" InformativeScreenshot="90ceeb51160c0c5af8532fa88d912814.png" Reference="yD91Cef3nUWnwnuicWEtsw/euFmhV3Axk60SKEfPrszsw" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'btn_accept'" sap:VirtualizedContainerService.HintSize="483.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52ae97ee-2db0-48a2-bb5f-04ef69358140" Version="V4">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="5QWTNd_PIEet92yxR4nlgg" DesignTimeRectangle="17, 171, 108, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='w_pageqry_Window.w_pageqry_Window_CentralWidget.w_pageqry_Form_t*' name='選擇需要匯出Excel的頁簽' role='push button' /&gt;&lt;ctrl automationid='w_pageqry_Window.w_pageqry_Window_CentralWidget.w_pageqry_Form_t*' /&gt;&lt;ctrl automationid='w_pageqry_Window.w_pageqry_Window_CentralWidget.w_pageqry_Form_t*' /&gt;&lt;ctrl automationid='w_pageqry_Window.w_pageqry_Window_CentralWidget.w_pageqry_Form_t*' /&gt;&lt;ctrl automationid='w_pageqry_Window.w_pageqry_Window_CentralWidget.w_pageqry_Form_t*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_pageqry_Window.w_pageqry_Window_CentralWidget.w_pageqry_Form_t*' name='選擇需要匯出Excel的頁簽' role='push button' /&gt;&lt;ctrl automationid='w_pageqry_Window.w_pageqry_Window_CentralWidget.w_pageqry_Form_t*' /&gt;&lt;ctrl automationid='w_pageqry_Window.w_pageqry_Window_CentralWidget.w_pageqry_Form_t*' /&gt;&lt;ctrl automationid='w_pageqry_Window.w_pageqry_Window_CentralWidget.w_pageqry_Form_t*' /&gt;&lt;ctrl automationid='w_pageqry_Window.w_pageqry_Window_CentralWidget.w_pageqry_Form_t*' role='push button' check:fulltext='btn_accept' /&gt;" Guid="621fb90e-cbfb-4a89-988c-98df9b76028c" InformativeScreenshot="7d732fa16649c50c27aad4bbb03c3c64.png" Reference="yD91Cef3nUWnwnuicWEtsw/aQvjlmgYikqDz7fZv_VvNg" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowToolSaveBits' title='選擇需要匯出Excel的頁簽' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <ui:GetLastDownloadedFile FileResource="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[download_file]" sap:VirtualizedContainerService.HintSize="483.2,567.2" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" IgnoreFiles="tmp,crdownload">
+                    <ui:GetLastDownloadedFile.Body>
+                      <ActivityAction>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,276.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="416,216.8" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52ae97ee-2db0-48a2-bb5f-04ef69358140" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable ContentHash="NUdai-6ydUSYYOsD5hEqtQ" DesignTimeRectangle="305, 90, 75, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Menu_txt_確認框(lib-00666)_MenuWindow.w_*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Menu_txt_確認框(lib-00666)_MenuWindow.w_*' name='確認框(lib-00666)' role='grouping' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Menu_txt_確認框(lib-00666)_MenuWindow.w_*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Menu_txt_確認框(lib-00666)_MenuWindow.w_*' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Menu_txt_確認框(lib-00666)_MenuWindow.w_*' name='確認框(lib-00666)' role='grouping' /&gt;&lt;ctrl automationid='w_axrq130_Window.w_axrq130_Menu_txt_確認框(lib-00666)_MenuWindow.w_*' role='push button' check:fulltext='是' /&gt;" Guid="4cead8dc-d9c2-452b-aeac-cd169f45b445" InformativeScreenshot="6d18253fe643c4e80678a5b4e1ae2382.png" Reference="yD91Cef3nUWnwnuicWEtsw/79cy6Exn20KzsVkwunH-DQ" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='確認框(lib-00666)' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:GetLastDownloadedFile.Body>
+                  </ui:GetLastDownloadedFile>
+                  <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="483.2,159.2" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="msedge" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable ContentHash="b54CZ9xgrEmzLbDdYlRAhg" DesignTimeRectangle="262, 280, 94, 25" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' name='錯誤' role='push button' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' idx='2' name=' ' role='push button' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' name='ok' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' name='錯誤' role='push button' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' name=' ' role='push button' /&gt;&lt;ctrl automationid='w_err_Window.w_err_Window_CentralWidget.w_err_Form_tag_F001_00_S*' name='ok' role='push button' check:fulltext='ok' /&gt;" Guid="84b16e25-8c37-434d-bdeb-c9e3c31cddc6" InformativeScreenshot="292592628a669807c704127d48cab1e6.png" Reference="yD91Cef3nUWnwnuicWEtsw/QN0Tv5_MiUe0hYKrVQBY4g" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowToolSaveBits' title='錯誤' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click '關閉'" sap:VirtualizedContainerService.HintSize="1019.2,218.4" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="52ae97ee-2db0-48a2-bb5f-04ef69358140" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="z3zySgb5Uki8zMjiQi1xGg" DesignTimeRectangle="1882, 1, 47, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='關閉' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='關閉' role='push button' automationid='' check:text='關閉' /&gt;" Guid="3e2827ea-3c8b-491d-bdf2-63d546b5e4dc" InformativeScreenshot="aa425ad4935a0bdf6fbfc0de013f2714.png" Reference="yD91Cef3nUWnwnuicWEtsw/BTNSvaNnbUGxB_vvkx_nig" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, 245, 1936, 619" ContentHash="LPk_haJo8k-aaR0TCq9lUA" FilePath="C:\Program Files\FourJs\gdc\bin\gdc.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHXSURBVDhPzZLPa9NgGMdjbWezNJBhYdaMOlGLjsFWir8QMSAIgogFz4Ke/BO89eDFizdvu+4m9nmStGHDSi6KMAsijNn0Xd7nzTyIsIOgF0F55Y1Y6evRix/48kC+7weeN4lh/F/4I7vSpSu1ULQXQtGuBXRLTTdIbzTCZMWLqawrU7ghXymD+HAQMjkd8WMGaN8GerYY0AXdm9AaDktHfXbPQt4zUQws5AMLxWAW+csyZJ8K3UyaQFQP06u6O0UnjovXI3ZIrfwr25WliDUdP+0WIJMW8K3Wxk5N93K8OC42+zvHLvkjW+8uvkhcC2hLXesIpnf1Psf1x/dNoL05ZOte/NbR+/mAHhRASAf5mt7lqzvIfaO7J8tA+8u98Rn9TD3cvVOETDoonqrzem8s4G67AvTqMKaPWsFwVu/nff5QXWEO+RO9m3Bt853VkbKgP29GbMlEGhVBfHeR3db7HCV6cVK9vCFqv9N6ntaP99hNG+m1+goV4Jur8Pf7MdTKVT/tWEjbFtDYApGoaaKgEmTflGwDf7PYH6/qbs7pkHkW0scSiK8lEF9m/uSzifS+6qePlyN2QvcmeEFSbQTp2UbIz6mc6tN5NU9GrKl+HCnlAd35Z34Cilr/eH6aa7AAAAAASUVORK5CYII=" InformativeScreenshot="2fb89dd9b9d5ce147f65d2ca3ec64291.png" Reference="yD91Cef3nUWnwnuicWEtsw/c-OelRybm0qtG-cNpTi_vA" Selector="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*' /&gt;" Title="出貨立帳匹配查詢作業(axrq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOP*" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <If Condition="[download_file IsNot Nothing]" sap:VirtualizedContainerService.HintSize="1086.4,1520.8" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="611.2,1366.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="577.6,1306.4" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+            <ueab:ExcelProcessScopeX.Body>
+              <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="544,1196.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" AutoSave="False" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="510.4,577.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" TemplatePath=".templates\axrq130-2026111215095700000.xlsx" UseTemplate="True" WorkbookPath="[download_file.FullName]">
+                    <ueab:ExcelApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476.8,252.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="443.2,192.8" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;出貨單查詢&quot;).Range(&quot;B:AB&quot;)]" SaveTo="[input_data]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:ExcelApplicationCard.Body>
+                  </ueab:ExcelApplicationCard>
+                  <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="510.4,559.2" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" TemplatePath=".templates\ERP單據未結案追蹤-當天日期.xlsx" UseTemplate="True" WorkbookPath="[GlobalVariablesNamespace.GlobalVariables.file_path]">
+                    <ueab:ExcelApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,243.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;出貨未立帳-業管&quot;).Range(&quot;A2&quot;)]" DisplayName="Write DataTable to Excel" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,183.2" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[input_data]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:ExcelApplicationCard.Body>
+                  </ueab:ExcelApplicationCard>
+                </Sequence>
+              </ActivityAction>
+            </ueab:ExcelProcessScopeX.Body>
+          </ueab:ExcelProcessScopeX>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="611.2,24.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>

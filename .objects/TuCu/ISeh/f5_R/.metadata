@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge 未確認未過帳單據檢核表",
+  "Type": "Screen",
+  "Id": "f5_RId-8wUSWgPhXFVCwwQ",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/f5_RId-8wUSWgPhXFVCwwQ",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/ISehWzDEaEa6fnXcq7PIBw",
+  "Created": "2026-11-12T02:57:58.0892826Z",
+  "Updated": "2026-11-12T02:57:58.0892826Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

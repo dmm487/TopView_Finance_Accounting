@@ -1,0 +1,134 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="登出T100" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="登出T100_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="登出T100" sap:VirtualizedContainerService.HintSize="894.8000000000001,841.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="T100 系統首頁(azzi000)      [RPA測試環境toptst,200]" sap:VirtualizedContainerService.HintSize="483.2,818.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="429f9e1e-a5b7-4597-ba67-3a98fcc5c7ba" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,504" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'logout'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="429f9e1e-a5b7-4597-ba67-3a98fcc5c7ba" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="3sIwmrnkb06kDqSVWKogRQ" DesignTimeRectangle="1877, 48, 40, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' name='T100 系統首頁(azzi000)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOPV*' role='push button' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' name='cmt_grid_1' role='push button' /&gt;&lt;ctrl automationid='w_azzi000_Window.w_azzi000_Window_CentralWidget.w_azzi000_Form_t*' name='logout' role='push button' /&gt;" Guid="91f31a16-1428-44d5-b4dc-c42a246cb56c" ImageBase64="" InformativeScreenshot="3e8444b04b24a4ba17411a556be9b083.png" Reference="yD91Cef3nUWnwnuicWEtsw/KxuCFnn1EE2RKxg0lEPNTQ" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='T100 系統首頁(azzi000)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOPV*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click '退出'" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="429f9e1e-a5b7-4597-ba67-3a98fcc5c7ba" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="uwRA08p48EKoHQynglp0TA" DesignTimeRectangle="791, 777, 93, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='GDC.m_CentralWidget.m_QuitPushButton' /&gt;" Guid="2782fa82-611c-4d5a-8586-ff6fc7399367" ImageBase64="" InformativeScreenshot="8d6f1b3f39754a45f43db8f2f911dab1.png" Reference="yD91Cef3nUWnwnuicWEtsw/wEukJ8W8GkmgM5mI1jdcTw" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='Genero Desktop Client - 接口(port):6400(任何)' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" ContentHash="7t_N4GAlhU6LJs-rMxin8w" FilePath="C:\Program Files\FourJs\gdc\bin\gdc.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHXSURBVDhPzZLPa9NgGMdjbWezNJBhYdaMOlGLjsFWir8QMSAIgogFz4Ke/BO89eDFizdvu+4m9nmStGHDSi6KMAsijNn0Xd7nzTyIsIOgF0F55Y1Y6evRix/48kC+7weeN4lh/F/4I7vSpSu1ULQXQtGuBXRLTTdIbzTCZMWLqawrU7ghXymD+HAQMjkd8WMGaN8GerYY0AXdm9AaDktHfXbPQt4zUQws5AMLxWAW+csyZJ8K3UyaQFQP06u6O0UnjovXI3ZIrfwr25WliDUdP+0WIJMW8K3Wxk5N93K8OC42+zvHLvkjW+8uvkhcC2hLXesIpnf1Psf1x/dNoL05ZOte/NbR+/mAHhRASAf5mt7lqzvIfaO7J8tA+8u98Rn9TD3cvVOETDoonqrzem8s4G67AvTqMKaPWsFwVu/nff5QXWEO+RO9m3Bt853VkbKgP29GbMlEGhVBfHeR3db7HCV6cVK9vCFqv9N6ntaP99hNG+m1+goV4Jur8Pf7MdTKVT/tWEjbFtDYApGoaaKgEmTflGwDf7PYH6/qbs7pkHkW0scSiK8lEF9m/uSzifS+6qePlyN2QvcmeEFSbQTp2UbIz6mc6tN5NU9GrKl+HCnlAd35Z34Cilr/eH6aa7AAAAAASUVORK5CYII=" InformativeScreenshot="c37de0a2596198788600aa52c2e97f5e.png" Reference="yD91Cef3nUWnwnuicWEtsw/Q6y-2ie4Lku4WQvcZPag3w" Selector="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='T100 系統首頁(azzi000)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOPV*' /&gt;" Title="T100 系統首頁(azzi000)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOPV*" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

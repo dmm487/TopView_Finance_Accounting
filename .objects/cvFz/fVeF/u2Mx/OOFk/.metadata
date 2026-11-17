@@ -1,0 +1,14 @@
+﻿{
+  "Name": "日曆(1)",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "OOFkstN1qUOwnem1g3NtwA",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/OOFkstN1qUOwnem1g3NtwA",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/u2MxVouheky9aVZvl45E9g",
+  "Created": "2026-11-12T02:48:35.7099286Z",
+  "Updated": "2026-11-12T02:48:35.7099286Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

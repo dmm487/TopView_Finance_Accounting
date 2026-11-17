@@ -1,0 +1,13 @@
+﻿{
+  "Name": "繁體中文",
+  "Type": "Element",
+  "Id": "48uhv20kdk6z2X-9ahgIjQ",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/48uhv20kdk6z2X-9ahgIjQ",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/OPLHR99_S0W1pkauy3U9Xw",
+  "Created": "2026-11-11T08:19:44.1259569Z",
+  "Updated": "2026-11-11T08:19:44.1259569Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

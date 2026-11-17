@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-oOUExnDk0q2iEG2maNo-w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.1.89/toptst/(S(w4f4qvdlpltmi521vz0gx5rw))/Default.aspx" DesignTimeRectangle="522, 299, 69, 16" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl name='ViewReport' tag='FRAME' /&gt;&lt;webctrl class='x-btn-inner' tag='SPAN' type='' aaname='確定' check:innerText='確定' /&gt;" Guid="5479605b-2dd5-4e40-bdfd-4ac66995efe3" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='screendpi' title='未確認未過帳單據檢核表' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c67a2b04483ad600eee1126554c3075d.png" xmlns="">0en0douhi_U-yNhQkdD00MQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

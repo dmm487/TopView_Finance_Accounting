@@ -1,0 +1,13 @@
+﻿{
+  "Name": "財務會計管理",
+  "Type": "Element",
+  "Id": "OjS8SpUM_kmof6aiarlCwA",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/OjS8SpUM_kmof6aiarlCwA",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/Q6y-2ie4Lku4WQvcZPag3w",
+  "Created": "2026-11-11T08:47:21.3306362Z",
+  "Updated": "2026-11-11T08:47:21.3306362Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

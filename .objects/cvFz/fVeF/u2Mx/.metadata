@@ -1,0 +1,13 @@
+﻿{
+  "Name": "未確認未過帳單據檢核表(aoor700)      [RPA測試環境toptst,200]",
+  "Type": "Screen",
+  "Id": "u2MxVouheky9aVZvl45E9g",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/u2MxVouheky9aVZvl45E9g",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/fVeFaNlow0CDRM1ON83sGg",
+  "Created": "2026-11-12T02:45:17.1251648Z",
+  "Updated": "2026-11-12T02:45:17.1251648Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

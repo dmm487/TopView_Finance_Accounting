@@ -1,0 +1,14 @@
+﻿{
+  "Name": "開啟「T100 ERP V3」",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "9eHy5xm2T0e5eSw8WkImhQ",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/9eHy5xm2T0e5eSw8WkImhQ",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/IJhYUyktDUiE8mGH-S_ojw",
+  "Created": "2026-11-11T07:53:04.3411228Z",
+  "Updated": "2026-11-11T07:53:04.3411228Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

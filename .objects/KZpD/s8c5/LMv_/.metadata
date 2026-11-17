@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge msedge.exe",
+  "Type": "Screen",
+  "Id": "LMv_6qp01kGlkbyPoCKEPg",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/LMv_6qp01kGlkbyPoCKEPg",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/s8c5FZ0jvEqD_09N8fXiJQ",
+  "Created": "2026-11-13T03:50:15.3627384Z",
+  "Updated": "2026-11-13T03:50:15.3627384Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

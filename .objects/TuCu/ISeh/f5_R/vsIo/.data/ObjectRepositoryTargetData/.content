@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OiFgmpi6LESYXtdS9u3n5w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="192.168.1.89/toptst/(S(11dozase2udm3xtrpq3xhuqc))/Default.aspx" CVScreenId="174f266c-8714-4871-a319-c15c9d406b7d" DesignTimeRectangle="59, 64, 40, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;ctrl name='未確認未過帳單據檢核表 - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='應用程式列' role='tool bar' /&gt;&lt;ctrl name='重新整理' role='push button' /&gt;" Guid="9f60273c-ebda-466b-9c0a-ddbb70084b3e" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='未確認未過帳單據檢核表 - 設定檔 1 - Microsoft​ Edge' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="ea9b7145ca23de4f3d13cec1fffaa7e2.png" xmlns="">0IcO9yvOVWECtRvTqaXuD7w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

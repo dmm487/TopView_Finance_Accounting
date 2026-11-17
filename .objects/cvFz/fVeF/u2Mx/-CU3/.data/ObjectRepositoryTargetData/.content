@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="n9_EOePPZkOaBZ_SL6Q6dg" Reference="yD91Cef3nUWnwnuicWEtsw/-CU3UyP9ck6QXzD10AIIhA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="1270, 1, 46, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='最大化' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='最大化' role='push button' automationid='' check:text='最大化' /&gt;" Guid="71ad093a-4572-49ae-8fd9-c2bd4f591688" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='未確認未過帳單據檢核表(aoor700)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TO*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="de06c14b5e33cfa9a6e985ddb1ca32b7.png" xmlns="">0J06vOvG8vECK3ZsYgOL09A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

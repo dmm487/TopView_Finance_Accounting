@@ -1,0 +1,14 @@
+﻿{
+  "Name": "未立暫估且未立帳",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Id": "V5W9cFDkqkKMrgBu14kwtA",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/V5W9cFDkqkKMrgBu14kwtA",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/rv9NidT4BUiCJLv3BzFQWg",
+  "Created": "2026-11-12T06:51:10.5870944Z",
+  "Updated": "2026-11-12T06:51:10.5870944Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

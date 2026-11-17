@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="eq8kQfs7Mk6wWz3yqZ8xsA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="t100.topviewcorp.com" DesignTimeRectangle="940, 202, 160, 37" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl name='要開啟「T100 ERP V3」嗎？' role='dialog' /&gt;&lt;ctrl name='開啟「T100 ERP V3」' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='要開啟「T100 ERP V3」嗎？' role='dialog' /&gt;&lt;ctrl name='開啟「T100 ERP V3」' role='push button' automationid='' check:fulltext='開啟「T100 ERP V3」' /&gt;" Guid="0d471890-5a3b-42bd-82c7-d52822b7db05" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='T100_Index - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7d10dd12bb9fff9405c5561d62699fb6.png" xmlns="">0WFU29tVfj0SZO7dHnJUcUQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

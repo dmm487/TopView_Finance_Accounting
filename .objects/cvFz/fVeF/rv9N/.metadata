@@ -1,0 +1,13 @@
+﻿{
+  "Name": "入庫未立帳查詢作業(aapq130)      [RPA測試環境toptst,200]  ",
+  "Type": "Screen",
+  "Id": "rv9NidT4BUiCJLv3BzFQWg",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/rv9NidT4BUiCJLv3BzFQWg",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/fVeFaNlow0CDRM1ON83sGg",
+  "Created": "2026-11-12T06:50:41.4605243Z",
+  "Updated": "2026-11-12T06:50:41.4605243Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

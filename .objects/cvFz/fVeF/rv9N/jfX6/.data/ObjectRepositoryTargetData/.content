@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7a6tEXLr2EyOINKSZP11vw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="305, 90, 75, 24" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='w_aapq130_Window.w_aapq130_Menu_txt_確認框(lib-00666)_MenuWindow.w_*' /&gt;&lt;ctrl automationid='w_aapq130_Window.w_aapq130_Menu_txt_確認框(lib-00666)_MenuWindow.w_*' name='確認框(lib-00666)' role='grouping' /&gt;&lt;ctrl automationid='w_aapq130_Window.w_aapq130_Menu_txt_確認框(lib-00666)_MenuWindow.w_*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_aapq130_Window.w_aapq130_Menu_txt_確認框(lib-00666)_MenuWindow.w_*' /&gt;&lt;ctrl automationid='w_aapq130_Window.w_aapq130_Menu_txt_確認框(lib-00666)_MenuWindow.w_*' name='確認框(lib-00666)' role='grouping' /&gt;&lt;ctrl automationid='w_aapq130_Window.w_aapq130_Menu_txt_確認框(lib-00666)_MenuWindow.w_*' role='push button' check:fulltext='是' /&gt;" Guid="19001ccb-55a9-470e-871e-af91e26f3085" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='確認框(lib-00666)' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6d18253fe643c4e80678a5b4e1ae2382.png" xmlns="">0iOwg-MNNR0y1eFaOUBgkuw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

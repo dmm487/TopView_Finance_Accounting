@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="r00jXiaiwE-hzAAEDKeejg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="18, 56, 37, 38" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='w_aoor700_Window.w_aoor700_aoor700.tmp_ToolBar_name_tb_system.w_*' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_aoor700_Window.w_aoor700_aoor700.tmp_ToolBar_name_tb_system.w_*' role='push button' check:fulltext='output' /&gt;" Guid="52651a9d-32d9-403e-8bba-811c343ab2cc" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='未確認未過帳單據檢核表(aoor700)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TO*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7ad5d2b47b015faa1bc95dca48fc054d.png" xmlns="">0cCgwh-2MZE-mOvUeFyb8Jw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

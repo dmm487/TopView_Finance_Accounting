@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="p0neeMV1xUyftv4I_W_j3w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="406, 55, 37, 38" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;ctrl automationid='w_aapq130_Window.w_aapq130_aapq130.tmp_ToolBar_name_tb_system.w_*' name='exporttoexcel' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='w_aapq130_Window.w_aapq130_aapq130.tmp_ToolBar_name_tb_system.w_*' name='exporttoexcel' role='push button' check:fulltext='exporttoexcel' /&gt;" Guid="d7804596-c9d9-40fd-ba3c-003544ea1049" ScopeSelectorArgument="&lt;wnd app='gdc.exe' cls='Qt672QWindowIcon' title='入庫未立帳查詢作業(aapq130)      [RPA測試環境:toptst,200]      營運據點:勝品電通(TOPV*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e36fc594804c5ad0369c0fb270b18cdb.png" xmlns="">06doxAb2NW0iW9DC7G5l47Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

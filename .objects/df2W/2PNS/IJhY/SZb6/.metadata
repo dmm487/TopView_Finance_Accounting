@@ -1,0 +1,14 @@
+﻿{
+  "Name": "RPA測試環境",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "SZb6W6NmREGUSS9RUPT5og",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/SZb6W6NmREGUSS9RUPT5og",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/IJhYUyktDUiE8mGH-S_ojw",
+  "Created": "2026-11-11T07:52:03.9343037Z",
+  "Updated": "2026-11-11T07:52:03.9343037Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "cmt_edate",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "M-mIIek6KE6dUt8VNGcKPQ",
+  "Reference": "yD91Cef3nUWnwnuicWEtsw/M-mIIek6KE6dUt8VNGcKPQ",
+  "ParentRef": "yD91Cef3nUWnwnuicWEtsw/u2MxVouheky9aVZvl45E9g",
+  "Created": "2026-11-12T03:40:25.5728378Z",
+  "Updated": "2026-11-12T03:40:25.5728378Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.12.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
